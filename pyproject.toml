@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ocpp-load-managed-charging"
+version = "0.1.0"
+description = "OCPP 1.6J central system that keeps building base load plus all EV chargers under the main-fuse limit, phase-aware, with fair sharing."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+dependencies = [
+  "ocpp>=2.0",
+  "websockets>=13",
+  "numpy>=1.26",
+  "matplotlib>=3.8",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.5"]
+
+[project.scripts]
+olmc = "olmc.cli:main"
+
+[tool.setuptools]
+packages = ["olmc"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-p no:asyncio"
+
+[tool.ruff]
+line-length = 135
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
