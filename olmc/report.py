@@ -18,7 +18,7 @@ from .data import BuildingData, build  # noqa: E402
 from .live import Faults, run_live  # noqa: E402
 from .sim import LABELS, STRATEGIES, SimResult, metrics, simulate  # noqa: E402
 
-REPO = "https://github.com/Usernamepersonperson/ocpp-load-managed-charging"
+REPO = "https://github.com/VB-Builds/ocpp-load-managed-charging"
 SEED = 7
 # four representative fortnights (Mondays): mid-January, April, July, October of the simulated year
 BLOCKS = (7, 98, 189, 280)
