@@ -102,4 +102,4 @@ All data is simulated and seeded (`seed=7`), no measured data:
 
 ## Licence
 
-MIT, Copyright (c) 2026 Victor Bonilla. Dependencies: ocpp (MIT), websockets (BSD-3-Clause), numpy (BSD), matplotlib (matplotlib licence, BSD-style).
+MIT, Copyright (c) 2026 VB-Builds. Dependencies: ocpp (MIT), websockets (BSD-3-Clause), numpy (BSD), matplotlib (matplotlib licence, BSD-style).
